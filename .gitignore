@@ -1,0 +1,13 @@
+*~
+*.swp
+.DS_Store
+Thumbs.db
+node_modules/*
+docs/out
+out
+lcov-report
+lcov.info
+npm-*
+dist
+.enyocache
+test/dist
