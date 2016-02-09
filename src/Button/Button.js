@@ -5,6 +5,9 @@ var
 	GroupItem = require('enyo/GroupItem');
 
 var
+	FittableColumns = require('layout/FittableColumns');
+
+var
 	ButtonDecoratorLeft = require('./ButtonDecoratorLeft.js'),
 	ButtonDecoratorRight = require('./ButtonDecoratorRight.js');
 
@@ -101,13 +104,18 @@ module.exports = kind(
 	* @private
 	*/
 	tools: [
-		{kind: ButtonDecoratorLeft},
-		{name: 'button', classes: 'mochi-button-base'},
-		{name: 'client'},
-		{kind: ButtonDecoratorRight},
+		{
+			kind: FittableColumns,
+			components: [
+				{kind: ButtonDecoratorLeft},
+				{name: 'button', classes: 'mochi-button-base'},
+				{name: 'client'},
+				{kind: ButtonDecoratorRight}
+			]
+		},
 		{name: 'bar', classes: 'mochi-button-bar'}
 	],
-	
+
 	bindings: [
 		{from: '.decoratorLeft', to: '.$.buttonDecoratorLeft.content'},
 		{from: '.decoratorRight', to: '.$.buttonDecoratorRight.content'}

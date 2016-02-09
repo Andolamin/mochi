@@ -2,11 +2,11 @@
 .mochi-button {
 	position: relative;
 	border-width: 0px;
-	margin: 0px;
+	margin: 8px;
 	padding: 0px;
 	background-color: transparent;
 	white-space: nowrap;
-  	font-size:1.5rem;
+	font-size:1.5rem;
 	line-height:1.5rem;
 }
 .mochi-button:focus {
@@ -23,7 +23,7 @@
 	width: 0px;
 	background-color: #69cdff;
 }
-.mochi-button > .mochi-button-bar {
+.mochi-button .mochi-button-bar {
 	background-color: transparent;
 	-webkit-transition: background-color 0.2s linear;
 	-moz-transition: background-color 0.2s linear;
@@ -31,34 +31,15 @@
 	-ms-transition: background-color 0.2s linear;
 	transition: background-color 0.2s linear;
 }
-.mochi-button:active:hover:not([disabled]) > .mochi-button-bar {
-	background-color: #69cdff;
-}
-.mochi-button.active > .mochi-button-bar {
-	background-color: #69cdff;
-}
-.mochi-button.disabled {
-	opacity: 0.4;
-}
-.mochi-button-warning > .mochi-button-base {
-	color: #ff4a4a;
-}
-.mochi-button:active:hover:not([disabled]).mochi-button-warning > .mochi-button-bar {
-	background-color: #ff4a4a;
-}
-.mochi-button.active.mochi-button-warning > .mochi-button-bar {
-	background-color: #ff4a4a;
-}
 
-.mochi-button > .mochi-button-base {
+.mochi-button .mochi-button-base {
 	margin: 3px;
 	margin-right: 5px;
 	padding: 0px;
 	line-height: inherit;
-  	font-size:70%;
-	float: left;
+	font-size:70%;
 }
-.mochi-view-select-button > .mochi-button-base {
+.mochi-view-select-button .mochi-button-base {
 	height: 34px;
 	line-height: 34px;
 	vertical-align: middle;

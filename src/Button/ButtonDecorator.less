@@ -11,18 +11,9 @@
 	padding: 0px;
 	font-size:inherit;
 }
-.mochi-button > .mochi-button-decorator-left {
+.mochi-button .mochi-button-decorator-left {
 	padding: 0px;
 	font-size: inherit;
-	float: left;
-	/* Iffy method - prevents flickering in Chrome */
-	/*
-	-webkit-transition: padding 0.1s ease-in-out;
-	-moz-transition: padding 0.1s ease-in-out;
-	-o-transition: padding 0.1s ease-in-out;
-	-ms-transition: padding 0.1s ease-in-out;
-	transition: padding 0.1s ease-in-out;
-	*/
 
 	/* Preferred method */
 	-webkit-transition: -webkit-transform 0.1s ease-in-out;
@@ -31,24 +22,16 @@
 	-ms-transition: -ms-transform 0.1s ease-in-out;
 	transition: transform 0.1s ease-in-out;
 }
-.mochi-button:active:hover:not([disabled]) > .mochi-button-decorator-left {
+.mochi-button:active:hover:not([disabled]) .mochi-button-decorator-left {
 	-webkit-transform: translateX(-4px);
 	-moz-transform: translateX(-4px);
 	-o-transform: translateX(-4px);
 	-ms-transform: translateX(-4px);
 	transform: translateX(-4px);
 }
-.mochi-button > .mochi-button-decorator-right {
+.mochi-button .mochi-button-decorator-right {
 	padding: 0px;
 	font-size: inherit;
-	/* Iffy method - prevents flickering in Chrome */
-	/*
-	-webkit-transition: padding 0.1s ease-in-out;
-	-moz-transition: padding 0.1s ease-in-out;
-	-o-transition: padding 0.1s ease-in-out;
-	-ms-transition: padding 0.1s ease-in-out;
-	transition: padding 0.1s ease-in-out;
-	*/
 
 	/* Preferred method */
 	-webkit-transition: -webkit-transform 0.1s ease-in-out;
@@ -57,7 +40,7 @@
 	-ms-transition: -ms-transform 0.1s ease-in-out;
 	transition: transform 0.1s ease-in-out;
 }
-.mochi-button:active:hover:not([disabled]) > .mochi-button-decorator-right {
+.mochi-button:active:hover:not([disabled]) .mochi-button-decorator-right {
 	-webkit-transform: translateX(4px);
 	-moz-transform: translateX(4px);
 	-o-transform: translateX(4px);
