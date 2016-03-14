@@ -1,0 +1,7 @@
+{
+	"main": "ListItem.js",
+	"styles": [
+	  "ListItem.less"
+  ]
+}
+

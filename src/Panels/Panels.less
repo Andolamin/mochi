@@ -1,0 +1,40 @@
+.mochi-panels.rounded > *:not(:first-child) {
+	border-top-left-radius: 50px;
+}
+
+.mochi-panels > *:not(:first-child) {
+	border-left: rgba(255, 255, 255, 0.2) 1px solid;
+}
+
+.mochi-panels > *:not(:first-child)::before {
+	left: -6px;
+	height: 100%;
+	width: 6px;
+	display: block;
+	position: absolute;
+	content: "";
+	background-image: url('../../assets/panel-shadow.png'), url('../../assets/panel-straight-corner.png');
+	background-size: 6px ~"calc(100% - 50px)", 6px 50px;
+	background-position: bottom left, top left;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	top: 0;
+	bottom: 0;
+}
+
+.mochi-panels.rounded > *:not(:first-child)::before {
+	left: -6px;
+	width: 56px;
+	background-image: url('../../assets/panel-shadow.png'), url('../../assets/panel-rounded-corner.png');
+	background-size: 6px ~"calc(100% - 50px)", 56px 50px;
+}
+
+.mochi-light .mochi-panels, .mochi-light .mochi-panels > * {
+  background-color: #f5f5f5;
+  color: #323232;
+}
+
+.mochi-dark .mochi-panels, .mochi-dark .mochi-panels > * {
+  background-color: #323232;
+  color: #f5f5f5;
+}

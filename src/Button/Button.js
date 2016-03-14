@@ -150,7 +150,12 @@ module.exports = kind(
 			this.activeChanged();
 			this.calcBarValue();
 			this.barClassesChanged();
-		};
+			document.addEventListener('readystatechange', this.bindSafely(function () {
+        if (document.readyState === 'complete') {
+          this.calcBarValue();
+        } 
+			}), false);
+    };
 	}),
 
 	/**
@@ -173,7 +178,7 @@ module.exports = kind(
 	* @private
 	*/
 	updateBarPosition: function (bounds) {
-		this.$.bar.applyStyle('width', (bounds.width-bounds.width*5/100) + 'px');
+		this.$.bar.applyStyle('width', bounds.width + 'px');
 		this.$.bar.applyStyle('left', bounds.left + 'px');
 	},
 
@@ -206,4 +211,3 @@ module.exports = kind(
 		}
 	}
 });
-

@@ -1,0 +1,123 @@
+/* ScrollFade.css */
+.mochi-scroll-fade {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  top: 0;
+}
+
+.mochi-scroll-fade .top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.mochi-scroll-fade .bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+}
+.mochi-scroll-fade-row {
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  height: 1px;
+} 
+.mochi-light {
+  .mochi-scroll-fade-row.row-0 {
+    display: none;
+  }
+  .mochi-scroll-fade-row.row-1 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(197,197,197,0)), color-stop(0.5, #c5c5c5), to(rgba(197,197,197,0)));
+    background-image: -webkit-linear-gradient(left, rgba(197,197,197,0), #c5c5c5, rgba(197,197,197,0));
+    background-image: -moz-linear-gradient(left, rgba(197,197,197,0), #c5c5c5, rgba(197,197,197,0));
+    background-image: -ms-linear-gradient(left, rgba(197,197,197,0), #c5c5c5, rgba(197,197,197,0));
+    background-image: -o-linear-gradient(left, rgba(197,197,197,0), #c5c5c5, rgba(197,197,197,0));
+    background-image: linear-gradient(left, rgba(197,197,197,0), #c5c5c5, rgba(197,197,197,0));
+  }
+  .mochi-scroll-fade-row.row-2 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(213,213,213,0)), color-stop(0.5, #d5d5d5), to(rgba(213,213,213,0)));
+    background-image: -webkit-linear-gradient(left, rgba(213,213,213,0), #d5d5d5, rgba(213,213,213,0));
+    background-image: -moz-linear-gradient(left, rgba(213,213,213,0), #d5d5d5, rgba(213,213,213,0));
+    background-image: -ms-linear-gradient(left, rgba(213,213,213,0), #d5d5d5, rgba(213,213,213,0));
+    background-image: -o-linear-gradient(left, rgba(213,213,213,0), #d5d5d5, rgba(213,213,213,0));
+    background-image: linear-gradient(left, rgba(213,213,213,0), #d5d5d5, rgba(213,213,213,0));
+  }
+  .mochi-scroll-fade-row.row-3 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(229,229,229,0)), color-stop(0.5, #e5e5e5), to(rgba(229,229,229,0)));
+    background-image: -webkit-linear-gradient(left, rgba(229,229,229,0), #e5e5e5, rgba(229,229,229,0));
+    background-image: -moz-linear-gradient(left, rgba(229,229,229,0), #e5e5e5, rgba(229,229,229,0));
+    background-image: -ms-linear-gradient(left, rgba(229,229,229,0), #e5e5e5, rgba(229,229,229,0));
+    background-image: -o-linear-gradient(left, rgba(229,229,229,0), #e5e5e5, rgba(229,229,229,0));
+    background-image: linear-gradient(left, rgba(229,229,229,0), #e5e5e5, rgba(229,229,229,0));
+  }
+  .mochi-scroll-fade-row.row-4 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(245,245,245,0)), color-stop(0.5, #f5f5f5), to(rgba(245,245,245,0)));
+    background-image: -webkit-linear-gradient(left, rgba(245,245,245,0), #f5f5f5, rgba(245,245,245,0));
+    background-image: -moz-linear-gradient(left, rgba(245,245,245,0), #f5f5f5, rgba(245,245,245,0));
+    background-image: -ms-linear-gradient(left, rgba(245,245,245,0), #f5f5f5, rgba(245,245,245,0));
+    background-image: -o-linear-gradient(left, rgba(245,245,245,0), #f5f5f5, rgba(245,245,245,0));
+    background-image: linear-gradient(left, rgba(245,245,245,0), #f5f5f5, rgba(245,245,245,0));
+  }
+}
+
+.mochi-dark {
+  .mochi-scroll-fade-row.row-0 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(255,255,255,0)), color-stop(0.5, rgba(255,255,255,0.05)), to(rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0));
+    background-image: linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0));
+  }
+  .mochi-scroll-fade-row.row-1 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(39,39,39,0)), color-stop(0.5, #272727), to(rgba(39,39,39,0)));
+    background-image: -webkit-linear-gradient(left, rgba(39,39,39,0), #272727, rgba(39,39,39,0));
+    background-image: -moz-linear-gradient(left, rgba(39,39,39,0), #272727, rgba(39,39,39,0));
+    background-image: -ms-linear-gradient(left, rgba(39,39,39,0), #272727, rgba(39,39,39,0));
+    background-image: -o-linear-gradient(left, rgba(39,39,39,0), #272727, rgba(39,39,39,0));
+    background-image: linear-gradient(left, rgba(39,39,39,0), #272727, rgba(39,39,39,0));
+  }
+  .mochi-scroll-fade-row.row-2 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(42,42,42,0)), color-stop(0.5, #2a2a2a), to(rgba(42,42,42,0)));
+    background-image: -webkit-linear-gradient(left, rgba(42,42,42,0), #2a2a2a, rgba(42,42,42,0));
+    background-image: -moz-linear-gradient(left, rgba(42,42,42,0), #2a2a2a, rgba(42,42,42,0));
+    background-image: -ms-linear-gradient(left, rgba(42,42,42,0), #2a2a2a, rgba(42,42,42,0));
+    background-image: -o-linear-gradient(left, rgba(42,42,42,0), #2a2a2a, rgba(42,42,42,0));
+    background-image: linear-gradient(left, rgba(42,42,42,0), #2a2a2a, rgba(42,42,42,0));
+  }
+  .mochi-scroll-fade-row.row-3 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(45,45,45,0)), color-stop(0.5, #2d2d2d), to(rgba(45,45,45,0)));
+    background-image: -webkit-linear-gradient(left, rgba(45,45,45,0), #2d2d2d, rgba(45,45,45,0));
+    background-image: -moz-linear-gradient(left, rgba(45,45,45,0), #2d2d2d, rgba(45,45,45,0));
+    background-image: -ms-linear-gradient(left, rgba(45,45,45,0), #2d2d2d, rgba(45,45,45,0));
+    background-image: -o-linear-gradient(left, rgba(45,45,45,0), #2d2d2d, rgba(45,45,45,0));
+    background-image: linear-gradient(left, rgba(45,45,45,0), #2d2d2d, rgba(45,45,45,0));
+  }
+  .mochi-scroll-fade-row.row-4 {
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, from(rgba(48,48,48,0)), color-stop(0.5, #303030), to(rgba(48,48,48,0)));
+    background-image: -webkit-linear-gradient(left, rgba(48,48,48,0), #303030, rgba(48,48,48,0));
+    background-image: -moz-linear-gradient(left, rgba(48,48,48,0), #303030, rgba(48,48,48,0));
+    background-image: -ms-linear-gradient(left, rgba(48,48,48,0), #303030, rgba(48,48,48,0));
+    background-image: -o-linear-gradient(left, rgba(48,48,48,0), #303030, rgba(48,48,48,0));
+    background-image: linear-gradient(left, rgba(48,48,48,0), #303030, rgba(48,48,48,0));
+  }
+}
+
+.mochi-scroll-fade-row.row-0, .mochi-scroll-fade-row.row-1 {	
+  width: 100%;
+}
+.mochi-scroll-fade-row.row-2 {
+  width: 95%;	
+}
+.mochi-scroll-fade-row.row-3 {
+  width: 85%;	
+}
+.mochi-scroll-fade-row.row-4 {
+  width: 65%;
+}
